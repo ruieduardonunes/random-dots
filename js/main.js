@@ -18,7 +18,7 @@ function getWord() {
       document.getElementById("word").textContent = word;
     }
   };
-  xmlhttp.open("GET", "/data/words.txt", true);
+  xmlhttp.open("GET", "/disruptive-inspiration/data/words.txt", true);
   xmlhttp.send();
 }
 
