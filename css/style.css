@@ -151,7 +151,7 @@ header button:hover {
 #learn {
   position: absolute;
   width: 100%;
-  top: 102vh;
+  top: 0vh;
   left: 0;
   right: 0;
   background-color: #111;
@@ -160,6 +160,11 @@ header button:hover {
 
 #learn .small {
   margin-top: 8em;
+}
+
+#learn .small a {
+  color: #005bed;
+  text-decoration: none;
 }
 
 #learn .small h3,
@@ -173,4 +178,7 @@ p {
 
 #learn .small p {
   opacity: 0.88;
+  max-width: 24rem;
+  line-height: 1.5;
+  font-size: 1.2;
 }
