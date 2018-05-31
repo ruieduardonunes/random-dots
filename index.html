@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ideation</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://use.typekit.net/dab7yts.css">
+</head>
+
+<body>
+  <header>
+    <button onclick="showLearn()">learn</button>
+  </header>
+
+  <div class="content-wrapper full-screen collumn">
+    <div>
+      <h2 id="word">design</h1>
+    </div>
+    <div class="reload-wrapper">
+      <button onclick="getWord()" class="reload-button"></button>
+    </div>
+  </div>
+  <div id="learn" class="content-wrapper full-screen">
+    <header>
+      <button id="playButton" onclick="closeLearn()">X</button>
+    </header>
+    <div class="content-wrapper small">
+      <h3>This is XXX</h3>
+      <p>
+        Explainer here...
+      </p>
+    </div>
+  </div>
+
+<!--Scripts-->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
