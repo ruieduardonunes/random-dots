@@ -1,2 +1,3 @@
-# disruptive-inspiration
+# Extrapolator
+
 An ideation tool
