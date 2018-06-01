@@ -1,8 +1,6 @@
 html {
   font-size: 1em;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
 }
 
 body {
@@ -13,9 +11,8 @@ body {
   color: #333;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
+  position: relative;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
 }
 
 p {
