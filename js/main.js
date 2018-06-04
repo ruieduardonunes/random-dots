@@ -26,14 +26,16 @@ window.onload = getWord();
 
 function showLearn() {
   var wrapper = document.getElementById("learn");
+  var toggleButton = document.getElementById("toggleButton");
 
-  wrapper.style.top = "0";
-}
-
-function closeLearn() {
-  var wrapper = document.getElementById("learn");
-
-  wrapper.style.top = "102vh";
+  if (wrapper.style.top == "0px") {
+    wrapper.style.top = "102vh";
+    toggleButton.innerHTML = "learn";
+  } else {
+    wrapper.style.top = "0";
+    console.log(wrapper.style.top);
+    toggleButton.innerHTML = "close";
+  }
 }
 
 function reloadImage() {
