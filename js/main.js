@@ -35,3 +35,9 @@ function closeLearn() {
 
   wrapper.style.top = "102vh";
 }
+
+function reloadImage() {
+  var image = document.getElementsByClassName("hero-img")[0];
+
+  image.src = "https://source.unsplash.com/1600x900/?places,life";
+}

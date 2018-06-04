@@ -119,6 +119,12 @@ header button:hover {
   margin-top: 2rem;
 }
 
+.hero-img {
+  margin: 0 auto;
+  display: block;
+  height: 56vh;
+}
+
 .reload-wrapper {
   text-align: center;
   margin-top: 4rem;
