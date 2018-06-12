@@ -1,3 +1,3 @@
-# Extrapolator
+# Random Dots
 
 An ideation tool
