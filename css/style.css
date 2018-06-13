@@ -79,26 +79,15 @@ small,
 header {
   position: fixed;
   z-index: 10;
-  width: 88%;
+  width: 80%;
   text-align: right;
+  height: 48px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-header button {
-  margin-top: 2em;
-  text-transform: capitalize;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: #666;
-  font-size: 0.84em;
-  height: 24px;
-  border-radius: 6px;
-  outline: none;
-  transition: color 600ms cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-header button:hover {
-  color: var(--primaryColor);
+header div {
+  margin-top: 16px;
 }
 
 #playButton {
@@ -112,9 +101,8 @@ header a {
   cursor: pointer;
   color: #666;
   font-size: 0.84em;
-  line-height: 22px;
   padding: 8px;
-  vertical-align: bottom;
+  vertical-align: middle;
   border-radius: 6px;
   outline: none;
   transition: color 600ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -226,7 +214,7 @@ header a:hover {
 }
 
 .learn-title {
-  width: 24rem;
+  max-width: 24rem;
   position: relative;
 }
 
@@ -276,5 +264,16 @@ header a:hover {
 
   header {
     position: fixed;
+  }
+
+  .main-description {
+    font-size: 1.3em;
+  }
+
+  .hero-img {
+    margin: 0 auto;
+    display: block;
+    height: 32vh;
+    background-color: #666;
   }
 }
