@@ -17,12 +17,23 @@ body {
 }
 
 :root {
-  --primaryColor: #0062ff;
+  --primaryColor: #19b5fc;
   --accentColor: #e2f423;
 }
 
 p {
   margin-bottom: 1.3em;
+}
+
+a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  transition: 400ms ease;
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--accentColor);
 }
 
 h1,
@@ -83,7 +94,7 @@ header button {
   height: 24px;
   border-radius: 6px;
   outline: none;
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: color 600ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 header button:hover {
@@ -106,7 +117,8 @@ header a {
   vertical-align: bottom;
   border-radius: 6px;
   outline: none;
-  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: color 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  margin-right: 0.8em;
 }
 
 header a:hover {
@@ -120,6 +132,14 @@ header a:hover {
   box-sizing: border-box;
   right: 0;
   left: 0;
+}
+
+.row {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .full-screen {
@@ -194,42 +214,47 @@ header a:hover {
   right: 0;
   background-color: #111;
   transition: top 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  min-height: 100vh;
+  overflow: auto;
 }
 
-#learn .small {
+#learn .content-wrapper {
+  width: 72%;
+  margin: 0 auto;
   margin-top: 8em;
-}
-
-#learn .small a {
-  color: var(--primaryColor);
-  text-decoration: none;
-}
-
-#learn .small h3,
-p {
   color: #f2f2f2;
 }
 
-#learn .small h3 {
+.learn-title {
+  width: 24rem;
+}
+
+.method-info {
+  margin-top: 2em !important;
+  margin-bottom: 8em;
+}
+
+.method-info div {
+  width: 20rem;
+}
+
+.method-info div h4 {
   margin-bottom: 1em;
 }
 
-#learn .small p {
-  opacity: 0.88;
-  max-width: 24rem;
-  line-height: 1.5;
-  font-size: 1.2;
+.main-description {
+  font-size: 1.48em;
 }
 
-#learn .small h4 {
-  color: #f2f2f2;
+#toggleButton {
+  color: var(--primaryColor);
+}
+
+.getStarted {
+  margin-right: 16%;
 }
 
 @media only screen and (max-width: 520px) {
-  body {
-    height: 88vh;
-  }
-
   h2 {
     font-size: 2.236em;
   }

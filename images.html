@@ -9,46 +9,64 @@
 
 <body>
   <header>
-    <a href="index.html">With Words</a>
+    <a href="index.html">Play With Words</a>
     <button id="toggleButton" onclick="showLearn()">learn</button>
   </header>
 
   <div class="content-wrapper full-screen collumn">
     <div>
-      <!-- <img class="hero-img" src="https://source.unsplash.com/collection/190727/1600x900"> -->
-
       <img class="hero-img" src="https://source.unsplash.com/1600x900/?places,life">
     </div>
     <div class="reload-wrapper">
       <button onclick="reloadImage()" class="reload-button"></button>
     </div>
   </div>
-  <div id="learn" class="content-wrapper full-screen">
-    <div class="content-wrapper small">
-      <h3>Random Dots</h3>
-      <p>
-        Explaining complex ideas is tricky. <br />
-        This tool, inpired by Stefan Saigmister's <a target="_blank" href="https://www.youtube.com/watch?v=kNR_eOuveMw">A New Point Of View</a>, will help you think in new ways about the problems and concepts you want to communicate.
-      </p>
-      <h4>
-        Some resources
-      </h4>
-      <p>
-        Steve Job's "Creativity is just connecting things."
-        <br>
-        <a target="_blank" href="https://www.wired.com/1996/02/jobs-2/">Read here.</a>
-      </p>
-      <p>
-        Edward de Bono, On Lateral Thinking.
-        <br>
-        <a target="_blank" href="https://en.wikipedia.org/wiki/Lateral_thinking">Read here.</a>
-      </p>
-      <p>
-        Brian Eno, Oblique Strategies.
-        <br>
-        <a target="_blank" href="https://www.theguardian.com/music/2009/sep/07/oblique-strategies">Read here.</a>
-      </p>
-    </div>
+  <div id="learn" class="full-screen">
+    <section class="content-wrapper">
+      <div class="learn-title">
+        <h3>Random Dots</h3>
+        <p class="main-description">
+          Explaining complex ideas is tricky. <br />
+          This tool, inpired by Stefan Saigmister's <a target="_blank" href="https://www.youtube.com/watch?v=kNR_eOuveMw">A New Point Of View</a>, will help you think in new ways about the problems and concepts you want to communicate.
+        </p>
+      </div>
+      <div class="row method-info">
+        <div class="getStarted">
+          <h4>
+            Get started
+          </h4>
+          <p>
+            In the <a href="index.html">Play</a> interface, use the blue square to generate new words. You can also click on <a href="index.html">Play with Images</a> to get random images instead.
+          </p>
+          <p>
+            Everytime a new image appears, try to think about how that word, or image would help you describe the problem or idea you have at hand.
+
+            todo: add example here
+          </p>
+
+        </div>
+        <div class="digDeeper">
+          <h4>
+            Dig deeper
+          </h4>
+          <p>
+            Steve Job's "Creativity is just connecting things."
+            <br>
+            <a target="_blank" href="https://www.wired.com/1996/02/jobs-2/">Read here.</a>
+          </p>
+          <p>
+            Edward de Bono, On Lateral Thinking.
+            <br>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Lateral_thinking">Read here.</a>
+          </p>
+          <p>
+            Brian Eno, Oblique Strategies.
+            <br>
+            <a target="_blank" href="https://www.theguardian.com/music/2009/sep/07/oblique-strategies">Read here.</a>
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 
 <!--Scripts-->
