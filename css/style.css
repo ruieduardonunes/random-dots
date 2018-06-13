@@ -199,6 +199,17 @@ header a:hover {
   transition: all 100ms cubic-bezier(0.86, 0, 0.07, 1);
 }
 
+.button-label {
+  font-size: 0.88em;
+  opacity: 0;
+  transition: opacity 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.reload-button:hover + .button-label {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
 /*Learn section*/
 
 #learn {
