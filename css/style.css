@@ -147,6 +147,10 @@ header a:hover {
   align-content: center;
 }
 
+#word-wrapper {
+  cursor: pointer;
+}
+
 #word {
   text-align: center;
   font-weight: 700;
@@ -156,11 +160,14 @@ header a:hover {
   margin-top: 2rem;
 }
 
+#image-wrapper {
+  cursor: pointer;
+}
+
 .hero-img {
   margin: 0 auto;
   display: block;
   height: 56vh;
-  background-color: #666;
 }
 
 .reload-wrapper {
