@@ -221,7 +221,8 @@ header a:hover {
   background-color: #111;
   transition: top 600ms cubic-bezier(0.86, 0, 0.07, 1);
   min-height: 100vh;
-  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 #learn .content-wrapper {
