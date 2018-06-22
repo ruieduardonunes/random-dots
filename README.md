@@ -9,3 +9,5 @@ This tool, inpired by Stefan Saigmister's A New Point Of View, will help you thi
 In the [Play](http://ruieduardo.com/random-dots) interface, use the blue square to generate new words. You can also click on Play with Images to get random images instead.
 
 Everytime a new image appears, try to think about how that word, or image can help you describe the problem or idea you have at hand.
+
+In collaboration with Fiona Fox.
