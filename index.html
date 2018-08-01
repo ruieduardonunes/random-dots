@@ -1,69 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Random Dots</title>
 
-<head>
+    <!--Styling-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/dab7yts.css">
 
-  <title>Random Dots</title>
+  </head>
+  <body>
+    <section class="content-wrapper" id="hero-wrapper">
+      <nav>
+        <a href="index.html" id="nav-logo">random dots</a>
+        <a onclick="playToggle()" id="toggleButton">play with images</a>
+        <a onclick="scrollLearn()" href="#learn-wrapper">learn</a>
+      </nav>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!--Styles and fonts-->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/dab7yts.css">
-
-</head>
-
-<body>
-
-  <!--Navigation-->
-
-  <header>
-    <div>
-      <a href="images.html">Play With Images</a>
-      <a id="toggleButton" onclick="showLearn()">learn</a>
-    </div>
-  </header>
-
-  <!--Content-->
-
-  <div class="content-wrapper full-screen collumn">
-    <div id="word-wrapper" onclick="getWord()">
-      <h2 id="word">design</h2>
-    </div>
-    <div class="reload-wrapper">
-      <button onclick="getWord()" class="reload-button"></button>
-      <div class="button-label">
-        new
-      </div>
-    </div>
-  </div>
-  <div id="learn" class="full-screen">
-    <section class="content-wrapper">
-      <div class="learn-title">
-        <h3>Random Dots</h3>
-        <p class="main-description">
+      <section id="word-play-wrapper">
+        <div id="word-wrapper">
+          <h1 onclick="getWord()" id="word"></h1>
+        </div>
+        <div onclick="reloadImage()" id="image-wrapper">
+          <img id="hero-image" src="https://source.unsplash.com/1600x900/?places,life" />
+        </div>
+        <div id="play-wrapper">
+          <a onclick="getWord()" id="play">click for a new word</a>
+        </div>
+      </section>
+    </section>
+    <section class="content-wrapper" id="learn-wrapper">
+      <div id="title-wrapper">
+        <h3>random dots</h3>
+        <p id="main-description">
           Explaining complex ideas is tricky. <br />
           This tool, inpired by Stefan Saigmister's <a target="_blank" href="https://www.youtube.com/watch?v=kNR_eOuveMw">A New Point Of View</a>, will help you think in new ways about the problems and concepts you want to communicate.
         </p>
       </div>
-      <div class="row method-info">
-        <div class="getStarted">
+      <div class="row" id="learn-more-wrapper">
+        <div id="get-started-wrapper">
           <h4>
-            Get started
+            get started
           </h4>
           <p>
-            In the <a href="index.html">Play</a> interface, use the blue square to generate new words. You can also click on <a href="index.html">Play with Images</a> to get random images instead.
+            Click on the displayed word to get a random new one, or use the button bellow instead. You can also click on <a href="index.html">play with images</a> to get random images instead.
           </p>
           <p>
-            Everytime a new image appears, try to think about how that word, or image would help you describe the problem or idea you have at hand.
-
-            todo: add example here
+            Everytime a new one appears, try to think how that word, or image would help you describe the problem or idea you have at hand.
           </p>
 
         </div>
-        <div class="digDeeper">
+        <div id="dig-deeper-wrapper">
           <h4>
-            Dig deeper
+            dig deeper
           </h4>
           <p>
             Steve Job's "Creativity is just connecting things."
@@ -83,11 +73,8 @@
         </div>
       </div>
     </section>
-  </div>
-
-<!--Scripts-->
-<script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+    <!--Scripts-->
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
