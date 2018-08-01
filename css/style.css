@@ -216,6 +216,21 @@ nav #nav-logo {
 	font-size: 1em;
 }
 
+/*Footer*/
+
+#footer {
+	width: 100vw;
+	padding: 0 10vh 0 10vh;
+	background-color: #111;
+	display: inline-flex;
+	color: white;
+}
+
+#footer a {
+	padding-left: 2em;
+	color: var(--accentColor);
+}
+
 @media only screen and (max-width: 520px) {
 	.content-wrapper {
 		padding: 0 4vh 0 4vh;
