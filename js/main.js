@@ -102,14 +102,11 @@ function reloadImage() {
 	var image = document.getElementById('hero-image');
 	var playButton = document.getElementById('play');
 
-	image.src = ' ';
-
-	image.src = 'https://source.unsplash.com/1600x900/';
+	image.src = 'https://source.unsplash.com/1600x900?sig=' + Math.random();
 
 	function loaded() {
 		image.style.opacity = 1;
 	}
-
 	isIt();
 
 	function isIt() {
