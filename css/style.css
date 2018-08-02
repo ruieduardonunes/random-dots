@@ -227,6 +227,7 @@ nav #nav-logo {
 	flex-direction: row;
 	color: white;
 	box-sizing: border-box;
+	flex-wrap: wrap;
 }
 
 #footer a {
@@ -281,5 +282,15 @@ nav #nav-logo {
 
 	#title-wrapper {
 		width: 96%;
+	}
+
+	#footer {
+		padding: 0 4vh 4vh 4vh;
+	}
+
+	#unsplash {
+		padding-left: 0em;
+		justify-content: flex-start;
+		margin-left: 0;
 	}
 }
