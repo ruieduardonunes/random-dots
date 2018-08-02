@@ -217,19 +217,32 @@ nav #nav-logo {
 	font-size: 1em;
 }
 
-/*Footer*/
+/**/
 
 #footer {
 	width: 100vw;
-	padding: 0 10vh 0 10vh;
+	padding: 0 10vh 4vh 10vh;
 	background-color: #111;
 	display: inline-flex;
+	flex-direction: row;
 	color: white;
+	box-sizing: border-box;
 }
 
 #footer a {
-	padding-left: 2em;
 	color: var(--accentColor);
+}
+
+#github {
+	padding-left: 2.64em;
+	opacity: 0.72;
+}
+
+#unsplash {
+	padding-left: 2em;
+	opacity: 0.72;
+	justify-content: flex-end;
+	margin-left: auto;
 }
 
 @media only screen and (max-width: 520px) {
