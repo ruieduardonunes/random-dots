@@ -144,6 +144,7 @@ nav #nav-logo {
 #hero-image {
 	width: 100%;
 	object-fit: contain;
+	transition: opacity 400ms ease;
 }
 
 #play-wrapper {
@@ -260,7 +261,7 @@ nav #nav-logo {
 		font-size: 4.236em;
 	}
 
-	#image-wrapper {
+	#-wrapper {
 		height: 48%;
 		margin-top: 5.6em;
 	}

@@ -54,9 +54,6 @@ function getWord() {
 			var rand =
 				interjections[Math.floor(Math.random() * interjections.length)];
 
-			console.log(newInterjection);
-			console.log(rand);
-
 			if (plays == 0) {
 				// do nothing
 			} else if (plays == 1) {
@@ -103,8 +100,26 @@ window.onload = getWord();
 
 function reloadImage() {
 	var image = document.getElementById('hero-image');
+	var playButton = document.getElementById('play');
 
-	image.src = 'https://source.unsplash.com/1600x900/?places,life';
+	image.src = ' ';
+
+	image.src = 'https://source.unsplash.com/1600x900/';
+
+	function loaded() {
+		image.style.opacity = 1;
+	}
+
+	isIt();
+
+	function isIt() {
+		if (image.complete) {
+			loaded();
+		} else {
+			image.style.opacity = 0.48;
+			image.onload = isIt;
+		}
+	}
 }
 
 function scrollLearn() {
